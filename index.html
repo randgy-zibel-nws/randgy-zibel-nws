@@ -3,225 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Randgy</title>
-    <script src="https://cdn.jsdelivr.net/npm/@ionic/core@5.9.1/dist/ionic/ionic.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-        }
-
-        hr {
-            width: 80%;
-            margin: 20px 0;
-        }
-
-        ul {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-            margin-top: 20px;
-        }
-
-        ul li {
-            list-style: none;
-        }
-
-        ul li a {
-            position: relative;
-            color: #fff;
-            text-decoration: none;
-            display: inline-block;
-            padding: 20px 30px;
-            z-index: 1000;
-            backdrop-filter: blur(15px);
-        }
-
-        ul li a ion-icon {
-            font-size: 1.5em;
-            pointer-events: none;
-            opacity: 0.25;
-            transition: 0.25s;
-        }
-
-        ul li.active a ion-icon {
-            opacity: 1;
-        }
-
-        #marker {
-            position: absolute;
-            top: 0;
-            transition: 0.5s;
-            z-index: 1;
-        }
-
-        #marker::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 40px;
-            border-radius: 8px;
-            background: #5da6ff;
-            box-shadow: 0 0 15px #5da6ff,
-                0 0 30px #5da6ff,
-                0 0 40px #5da6ff,
-                0 0 60px #5da6ff;
-        }
-
-        ul li:nth-child(1).active~#marker::before {
-            background: #5da6ff;
-            box-shadow: 0 0 15px #5da6ff,
-                0 0 30px #5da6ff,
-                0 0 40px #5da6ff,
-                0 0 60px #5da6ff;
-        }
-
-        ul li:nth-child(2).active~#marker::before {
-            background: #ff0;
-            box-shadow: 0 0 15px #ff0,
-                0 0 30px #ff0,
-                0 0 40px #ff0,
-                0 0 60px #ff0;
-        }
-
-        ul li:nth-child(3).active~#marker::before {
-            background: #df2fff;
-            box-shadow: 0 0 15px #df2fff,
-                0 0 30px #df2fff,
-                0 0 40px #df2fff,
-                0 0 60px #df2fff;
-        }
-
-        ul li:nth-child(4).active~#marker::before {
-            background: #0f0;
-            box-shadow: 0 0 15px #0f0,
-                0 0 30px #0f0,
-                0 0 40px #0f0,
-                0 0 60px #0f0;
-        }
-
-        ul li:nth-child(5).active~#marker::before {
-            background: #ff308f;
-            box-shadow: 0 0 15px #ff308f,
-                0 0 30px #ff308f,
-                0 0 40px #ff308f,
-                0 0 60px #ff308f;
-        }
-
-        .cv-content {
-            width: 80%;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        .cv-content h3 {
-            margin-bottom: 10px;
-        }
-
-        .cv-content ul {
-            margin: 10px 0;
-        }
-
-        .footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 14px;
-        }
-    </style>
+    <title>Curriculum Vitae</title>
 </head>
 <body>
 
-    <!-- Menu interactif -->
+    <h1 style="text-align:center;">HEY, MOI C'EST RANDGY</h1>
+    <h2 style="text-align:center;">CHEF DE PROJETS DIGITAUX</h2>
+
+    <hr>
+
+    <h3>Coordonnées</h3>
+    <p><strong>Email :</strong> rafzibel@normandiewebschool.fr</p>
+    <p><strong>Téléphone :</strong> + 337 60 79 52 02</p>
+    <p><strong>Adresse :</strong> Le Havre, 76620</p>
+    <p><strong>Site web :</strong> www.exemple.com</p>
+
+    <hr>
+
+    <h3>Compétences</h3>
     <ul>
-        <li>
-            <a href="#" id="home">
-                <ion-icon name="home-outline"></ion-icon>
-            </a>
-        </li>
-        <li>
-            <a href="#" id="person">
-                <ion-icon name="person-outline"></ion-icon>
-            </a>
-        </li>
-        <li class="active">
-            <a href="#" id="add">
-                <ion-icon name="add-circle-outline"></ion-icon>
-            </a>
-        </li>
-        <li>
-            <a href="#" id="settings">
-                <ion-icon name="settings-outline"></ion-icon>
-            </a>
-        </li>
-        <li>
-            <a href="#" id="chat">
-                <ion-icon name="chatbubble-outline"></ion-icon>
-            </a>
-        </li>
-        <div id="marker"></div>
+        <li><strong>Gestion de projets :</strong> Planification, coordination et suivi de projets digitaux, gestion de plannings et ressources</li>
+        <li><strong>Méthodologies Agiles :</strong> Scrum, Kanban, gestion des sprints et des rétrospectives</li>
+        <li><strong>Outils de gestion de projet :</strong> Trello, Jira, Asana, Microsoft Project, Monday.com</li>
+        <li><strong>Stratégie digitale :</strong> Élaboration de stratégies de marketing digital, développement de plans de communication</li>
+        <li><strong>Gestion des équipes :</strong> Coordination et management d’équipes techniques et créatives</li>
+        <li><strong>Relation client :</strong> Gestion de la relation client, suivi des besoins et attentes, reporting régulier</li>
+        <li><strong>Budget et ROI :</strong> Suivi de budgets de projet, estimation des coûts, analyse du retour sur investissement (ROI)</li>
+        <li><strong>Analyse de données :</strong> Utilisation d’outils comme Google Analytics pour suivre et analyser les performances des projets digitaux</li>
+        <li><strong>Connaissance des technologies web :</strong> Compréhension des langages HTML, CSS, JavaScript, CMS (WordPress, Drupal)</li>
+        <li><strong>Communication :</strong> Compétences en rédaction, présentation et reporting, communication fluide avec les parties prenantes</li>
     </ul>
 
-    <!-- Contenu du CV -->
-    <div class="cv-content">
-        <h1>HEY, MOI C'EST RANDGY</h1>
-        <h2>CHEF DE PROJETS DIGITAUX</h2>
+    <hr>
 
-        <hr>
+    <h3>Expérience professionnelle</h3>
+   
+    <h4>Octobre 2024 - Maintenant</h4>
+    <p><strong>FORMATIONS Alternant</strong>, Au sein de votre structure</p>
+    <p>Participation active à des projets digitaux et logistiques, gestion de la planification et du suivi des différentes étapes des projets, support dans la gestion des ressources et des équipes.</p>
 
-        <h3>Coordonnées</h3>
-        <p><strong>Email :</strong> rafzibel@normandiewebschool.fr</p>
-        <p><strong>Téléphone :</strong> + 337 60 79 52 02</p>
-        <p><strong>Adresse :</strong> Le Havre, 76620</p>
-        <p><strong>Site web :</strong> www.exemple.com</p>
+    <h4>Mai 2024 - Septembre 2024</h4>
+    <p><strong>Gestionnaire de Projets Logistiques et Digitaux</strong>, De Rijke</p>
+    <p>Responsable de la gestion des projets logistiques et digitaux, coordination entre les équipes techniques et les clients, analyse des besoins et mise en place de solutions digitales adaptées.</p>
 
-        <hr>
+    <h4>Octobre 2023 - Mars 2024</h4>
+    <p><strong>Spécialiste en Logistique et Solutions Digitales</strong>, EFBS / CFAO / Giantex</p>
+    <p>Conception et mise en œuvre de solutions logistiques et digitales, gestion des flux de données, optimisation des processus internes à l’aide de solutions technologiques innovantes.</p>
 
-        <h3>Compétences</h3>
-        <ul>
-            <li><strong>Gestion de projets :</strong> Planification, coordination et suivi de projets digitaux, gestion de plannings et ressources</li>
-            <li><strong>Méthodologies Agiles :</strong> Scrum, Kanban, gestion des sprints et des rétrospectives</li>
-            <li><strong>Outils de gestion de projet :</strong> Trello, Jira, Asana, Microsoft Project, Monday.com</li>
-            <li><strong>Stratégie digitale :</strong> Élaboration de stratégies de marketing digital, développement de plans de communication</li>
-            <li><strong>Gestion des équipes :</strong> Coordination et management d’équipes techniques et créatives</li>
-            <li><strong>Relation client :</strong> Gestion de la relation client, suivi des besoins et attentes, reporting régulier</li>
-            <li><strong>Budget et ROI :</strong> Suivi de budgets de projet, estimation des coûts, analyse du retour sur investissement (ROI)</li>
-            <li><strong>Analyse de données :</strong> Utilisation d’outils comme Google Analytics pour suivre et analyser les performances des projets digitaux</li>
-            <li><strong>Connaissance des technologies web :</strong> Compréhension des langages HTML, CSS, JavaScript, CMS (WordPress, Drupal)</li>
-            <li><strong>Communication :</strong> Compétences en rédaction, présentation et reporting, communication fluide avec les parties prenantes</li>
-        </ul>
+    <h4>Décembre 2022 - Octobre 2023</h4>
+    <p><strong>Gestionnaire de Données Administratives et Financières</strong>, Humann & Taconet (Courtier Maritime)</p>
+    <p>Gestion des données administratives et financières des projets, suivi des opérations comptables et administratives, mise en place d’outils pour améliorer la gestion des données et des flux financiers.</p>
 
-        <hr>
+    <hr>
 
-        <h3>Expérience professionnelle</h3>
-        <h4>Octobre 2024 - Maintenant</h4>
-        <p><strong>FORMATIONS Alternant</strong>, Au sein de votre structure</p>
-        <p>Participation active à des projets digitaux et logistiques, gestion de la planification et du suivi des différentes étapes des projets, support dans la gestion des ressources et des équipes.</p>
+    <h3>Formation</h3>
+    <ul>
+        <li><strong>2024 - 2027 :</strong> Chef de Projets Digitaux, <em>École Normandie Web School, Le Havre</em></li>
+        <li><strong>2021 - 2022 :</strong> Certification Assistant Import-Export, <em>Centre Exego, Le Havre</em></li>
+        <li><strong>2019 - 2021 :</strong> BTS Commerce International (NIV), <em>Lycée Jean Macé, Rennes</em></li>
+        <li><strong>2018 - 2019 :</strong> BAC Pro Gestion Administration Comptabilité, <em>Lycée Porte Océane, Le Havre</em></li>
+    </ul>
 
-        <h4>Mai 2024 - Septembre 2024</h4>
-        <p><strong>Gestionnaire de Projets Logistiques et Digitaux</strong>, De Rijke</p>
-        <p>Responsable de la gestion des projets logistiques et digitaux, coordination entre les équipes techniques et les
+    <hr>
+
+    <h3>Points Forts</h3>
+    <ul>
+        <li>Esprit critique</li>
+        <li>Leadership</li>
+        <li>Travail d'équipe</li>
+        <li>Gestion de projet</li>
+        <li>Créativité</li>
+        <li>Polyvalence</li>
+        <li>Communication</li>
+        <li>Organisation et planification</li>
+    </ul>
+
+    <hr>
+
+    <h3>Langues</h3>
+    <ul>
+        <li>Français : Langue maternelle</li>
+        <li>Anglais : Courant (niveau C1)</li>
+        <li>Espagnol : Intermédiaire (niveau B2)</li>
+    </ul>
+
+    <hr>
+
+    <footer>
+        <p style="text-align:center;">Merci de votre attention !</p>
+    </footer>
+
+</body>
+</html>
 
