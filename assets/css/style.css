@@ -1,39 +1,98 @@
+/* Général */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-header,
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
-}
-
-h1 {
+  background-color: #2d2e32;
   color: #fff;
 }
 
-header li {
-  display: inline;
-  padding: 0 1em;
+.cv-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #3b3c47;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
+/* En-tête */
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d4af37;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #d4af37;
+}
+
+.intro h2 {
+  font-size: 1.5em;
+  margin: 5px 0;
+  color: #bdbdbd;
+}
+
+.intro p {
+  line-height: 1.5;
+}
+
+/* Sections */
+section {
+  margin-top: 20px;
+}
+
+section h3 {
+  color: #d4af37;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Liste de Contact */
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 5px 0;
+}
+
+/* Compétences avec barre de progression */
+.skill {
+  margin: 10px 0;
+}
+
+.skill p {
+  margin: 0 0 5px;
+}
+
+.progress-bar {
+  background-color: #555;
+  border-radius: 10px;
   width: 100%;
+  height: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-footer p {
-  margin: 0;
-}
-
-img {
-  width: 10%;
-  margin: 0;
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #d4af37;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
