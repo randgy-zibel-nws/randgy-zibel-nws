@@ -1,5 +1,5 @@
 <?php
-$>title ="Mon Cv"
+$title ="Mon Cv";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
